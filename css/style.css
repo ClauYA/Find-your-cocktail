@@ -1,0 +1,96 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+   background:#0f0e0e;
+   color: white;
+}
+header{
+  display: flex;
+  padding: 24px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 80px 80px 40px 80px;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  margin: 0 auto;
+  
+ 
+}
+.left-side{
+  width: 60%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.right-side{
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+input{
+  padding: 1rem 2rem ;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+button{
+  border-radius: 8px;
+  background: #D59C4B;
+  padding: 1rem 2rem ;
+  border-radius: 1rem;
+}
+img{
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  height: auto;
+  
+}
+@media (max-width:800px) 
+{
+   .container{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+   }
+   .left-side{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+   }
+   img{
+    width: 100%;
+   }
+   h1,h2,h3{
+    color: white;
+    text-align: center;
+   }
+   #intructions{
+    color: white;
+   }
+}
